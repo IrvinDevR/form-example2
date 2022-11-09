@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="formulario-s10">
+        <form action="">
+            <fieldset>
+                <label for="nombre"><strong>Nombre:</strong></label>
+                <input class="w-100" id="nombre" name="nombre" type="text" placeholder="Escribe tu nombre" maxlength="30">
+            </fieldset>
+            <fieldset>
+                <label for="apellido"><strong>Apellido:</strong></label>
+                <input class="w-100" id="apellido" name="apellido" type="text" placeholder="Escribe tu apellido" maxlength="30">
+            </fieldset>
+            <fieldset>
+                <label for="email"><strong>Email:<span class="requerido">*</span></strong></label>
+                <input class="w-100" id="email" type="email" placeholder="correo@empresa.com" required>
+            </fieldset>
+            <fieldset>
+                <label for="asunto"><strong>Asunto:</strong></label>
+                <select class="w-100" name="asunto" id="asunto">
+                    <option value="asunto">Pedir presupuesto web</option>
+                    <option value="asunto">Solicitar cita previa</option>
+                    <option value="asunto">Otros</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend><strong>¿Cómo nos ha conocido?</strong></legend>
+                <input id="amigo" name="amigo" type="checkbox">
+                <label for="amigo">Un amigo</label>
+                <input id="googleando" name="googleando" type="checkbox">
+                <label for="googleando">Googleando</label>
+                <input id="buzoneo" name="buzoneo" type="checkbox">
+                <label for="buzoneo">Buzoneo</label>
+                <input id="otros" name="otros" type="checkbox">
+                <label for="otros">Otros</label>
+            </fieldset>
+            <fieldset>
+                <label for="mensaje"><strong>Escribe tu mensaje</strong></label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" maxlength="300"></textarea>
+            </fieldset>
+            <fieldset>
+                <input type="checkbox" name="terms-cond" id="terms-cond" required>
+                <label for="terms-cond">He leído y acepto el <a href="#">aviso legal y la política de privacidad</a>.<span class="requerido">*</span></label>
+            </fieldset>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</body>
+</html>
